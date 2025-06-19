@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Linkedin, Download } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin, Download, MessageCircle } from 'lucide-react';
 
 interface ContactInfo {
   phone: string;
@@ -45,6 +45,10 @@ const Contact: React.FC<ContactProps> = ({ contact, onDownloadResume }) => {
       color: 'bg-green-50 text-green-600'
     }] : [])
   ];
+
+  const handleContactClick = () => {
+    window.open(`mailto:${contact.email}`, '_blank');
+  };
 
   return (
     <section id="contact" className="min-h-screen bg-white py-20">
@@ -92,21 +96,32 @@ const Contact: React.FC<ContactProps> = ({ contact, onDownloadResume }) => {
           ))}
         </div>
 
-        {/* Resume Download Section */}
-        <div className="text-center bg-gradient-to-r from-nothing-orange to-orange-500 rounded-2xl p-8 text-white animate-fade-in">
-          <h3 className="text-2xl font-bold mb-4">
-            Download My Resume
-          </h3>
-          <p className="text-orange-100 mb-6">
-            Get a comprehensive overview of my experience and skills in PDF format
-          </p>
-          <button
-            onClick={onDownloadResume}
-            className="inline-flex items-center gap-3 bg-white text-nothing-orange px-8 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200 hover-lift font-semibold text-lg"
-          >
-            <Download size={20} />
-            Download Resume PDF
-          </button>
+        {/* Action Buttons Section */}
+        <div className="bg-gradient-to-r from-nothing-orange to-orange-500 rounded-2xl p-8 text-white animate-fade-in">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl font-bold mb-4">
+              Ready to Work Together?
+            </h3>
+            <p className="text-orange-100">
+              Get in touch or download my resume to learn more about my experience
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={handleContactClick}
+              className="inline-flex items-center justify-center gap-3 bg-white text-nothing-orange px-8 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200 hover-lift font-semibold text-lg"
+            >
+              <MessageCircle size={20} />
+              Contact Me
+            </button>
+            <button
+              onClick={onDownloadResume}
+              className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-nothing-orange transition-all duration-200 hover-lift font-semibold text-lg"
+            >
+              <Download size={20} />
+              Download Resume
+            </button>
+          </div>
         </div>
 
         {/* Footer */}

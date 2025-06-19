@@ -6,6 +6,13 @@ interface ProfessionalSummaryProps {
 }
 
 const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({ summary }) => {
+  const handleContactClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="professional-summary" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-nothing-black to-nothing-gray text-white p-8">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
@@ -16,9 +23,14 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({ summary }) =>
           <div className="w-24 h-1 bg-nothing-orange mx-auto mb-8"></div>
         </div>
         
-        <p className="text-lg md:text-xl leading-relaxed text-gray-200 font-light">
-          {summary}
-        </p>
+        <div className="mb-8">
+          <h3 className="text-2xl md:text-3xl font-ndot55 text-white mb-6">
+            Hi, I'm Pranay - A Backend Developer
+          </h3>
+          <p className="text-lg md:text-xl leading-relaxed text-gray-200 font-light">
+            {summary}
+          </p>
+        </div>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
@@ -33,6 +45,15 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({ summary }) =>
             <div className="text-3xl font-ndot55 text-nothing-orange mb-2">15+</div>
             <div className="text-sm text-gray-300">Technologies</div>
           </div>
+        </div>
+
+        <div className="mt-12">
+          <button
+            onClick={handleContactClick}
+            className="bg-nothing-orange text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-all duration-200 hover-lift font-semibold text-lg"
+          >
+            Let's Connect
+          </button>
         </div>
       </div>
     </section>
