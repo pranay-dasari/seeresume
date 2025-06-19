@@ -45,9 +45,7 @@
     }
   ],
   "certifications": [
-    { "name": "AWS Certified Developer Associate", "date": "09/2023" },
-    { "name": "React Developer Certification", "date": "03/2023" },
-    { "name": "Google Analytics Certified", "date": "11/2022" }
+    
   ],
   "projects": [
     {
