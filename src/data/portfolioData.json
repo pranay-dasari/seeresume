@@ -1,0 +1,98 @@
+
+{
+  "fullName": "PRANAY DASARI",
+  "title": "Frontend Developer & AI Enthusiast",
+  "contact": {
+    "phone": "+1-123-456-7890",
+    "email": "pranay@example.com",
+    "linkedin": "https://linkedin.com/in/pranaydasari",
+    "city": "San Francisco, CA"
+  },
+  "professionalSummary": "Passionate frontend developer with 5+ years of experience building scalable web applications. Specialized in React, TypeScript, and modern AI-driven development tools. Committed to creating user-centric solutions that bridge technology and human experience.",
+  "skills": [
+    "React", "TypeScript", "JavaScript", "Tailwind CSS", "Node.js", "Python", 
+    "AI/ML Integration", "Supabase", "PostgreSQL", "Git", "Figma", "Communication", 
+    "Project Management", "Team Leadership", "Problem Solving"
+  ],
+  "workExperience": [
+    {
+      "jobTitle": "Senior Frontend Developer",
+      "company": "Tech Innovations Inc.",
+      "location": "San Francisco, CA",
+      "startDate": "03/2022",
+      "endDate": "Present",
+      "achievements": [
+        "Led development of a React-based dashboard serving 10,000+ daily users",
+        "Improved application performance by 40% through code optimization",
+        "Mentored 5 junior developers and established coding standards",
+        "Integrated AI-powered features that increased user engagement by 25%",
+        "Collaborated with design team to implement responsive UI components",
+        "Successfully delivered 15+ projects on time and within budget"
+      ]
+    },
+    {
+      "jobTitle": "Frontend Developer",
+      "company": "Digital Solutions LLC",
+      "location": "Remote",
+      "startDate": "06/2020",
+      "endDate": "02/2022",
+      "achievements": [
+        "Developed 20+ responsive web applications using React and Vue.js",
+        "Reduced page load times by 35% through performance optimization",
+        "Implemented automated testing suites with 90% code coverage",
+        "Worked closely with UX designers to improve user experience metrics",
+        "Maintained legacy codebases and migrated to modern frameworks"
+      ]
+    },
+    {
+      "jobTitle": "Junior Web Developer",
+      "company": "StartupHub Co.",
+      "location": "Austin, TX",
+      "startDate": "08/2019",
+      "endDate": "05/2020",
+      "achievements": [
+        "Built and maintained company website using HTML, CSS, and JavaScript",
+        "Contributed to 10+ client projects with diverse technical requirements",
+        "Learned React and modern development practices through hands-on experience",
+        "Participated in code reviews and agile development processes"
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "AWS Certified Developer Associate", "date": "09/2023" },
+    { "name": "React Developer Certification", "date": "03/2023" },
+    { "name": "Google Analytics Certified", "date": "11/2022" }
+  ],
+  "projects": [
+    {
+      "name": "AI-Powered Portfolio Generator",
+      "description": "A dynamic portfolio website generator that uses AI to create personalized layouts and content optimization based on user data and industry trends.",
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Supabase", "OpenAI API"],
+      "outcomes": "Generated 500+ unique portfolios with 95% client satisfaction rate"
+    },
+    {
+      "name": "E-Commerce Analytics Dashboard",
+      "description": "Comprehensive analytics platform for e-commerce businesses featuring real-time data visualization, performance metrics, and predictive analytics.",
+      "technologies": ["React", "D3.js", "Node.js", "PostgreSQL", "Redis"],
+      "outcomes": "Helped 50+ businesses increase revenue by average of 22%"
+    },
+    {
+      "name": "Team Collaboration Platform",
+      "description": "Modern project management and team collaboration tool with real-time messaging, file sharing, and integrated video conferencing capabilities.",
+      "technologies": ["React", "Socket.io", "Express.js", "MongoDB", "WebRTC"],
+      "outcomes": "Adopted by 15+ teams with 40% improvement in project delivery time"
+    }
+  ],
+  "additionalSections": {
+    "languages": ["English (Native)", "Spanish (Conversational)", "Hindi (Fluent)"],
+    "volunteerWork": [
+      "Organized monthly tech meetups for local developer community (2022-Present)",
+      "Mentored 20+ students through coding bootcamp programs",
+      "Contributed to open-source projects with 1000+ GitHub stars"
+    ],
+    "publications": [
+      "\"Modern Frontend Architecture: A React Developer's Guide\" - Dev.to (2023)",
+      "\"Building Scalable Applications with Supabase\" - Medium (2023)"
+    ]
+  }
+}
