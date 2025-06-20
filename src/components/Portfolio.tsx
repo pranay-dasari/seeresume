@@ -10,6 +10,7 @@ import Projects from './sections/Projects';
 import AdditionalSections from './sections/AdditionalSections';
 import Contact from './sections/Contact';
 import portfolioData from '../data/portfolioData.json';
+import { generatePDF } from '../utils/pdfUtils';
 
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState('professional-summary');
@@ -33,10 +34,7 @@ const Portfolio: React.FC = () => {
   };
 
   const handleDownloadResume = () => {
-    // For demo purposes, we'll show an alert. In a real implementation,
-    // this would generate and download a PDF using the portfolio data
-    alert('Resume download feature would be implemented here with PDF generation using the JSON data.');
-    console.log('Portfolio data for PDF generation:', portfolioData);
+    generatePDF(portfolioData);
   };
 
   // Handle scroll detection for active section
@@ -78,7 +76,12 @@ const Portfolio: React.FC = () => {
       />
 
       <main className="ml-0 md:ml-64 pt-20">
-        <ProfessionalSummary summary={portfolioData.professionalSummary} />
+        <ProfessionalSummary 
+          summary={portfolioData.professionalSummary}
+          experiences={portfolioData.workExperience}
+          projects={portfolioData.projects || []}
+          skills={portfolioData.skills}
+        />
         
         <Skills skills={portfolioData.skills} />
         

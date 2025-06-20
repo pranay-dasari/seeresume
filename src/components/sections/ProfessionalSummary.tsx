@@ -1,17 +1,46 @@
 
 import React from 'react';
+import { calculateTotalExperience, calculateTotalProjects, calculateUniqueTechnologies } from '../../utils/experienceUtils';
+
+interface WorkExperienceItem {
+  jobTitle: string;
+  company: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  achievements: string[];
+}
+
+interface ProjectItem {
+  name: string;
+  description: string;
+  technologies: string[];
+  outcomes?: string;
+}
 
 interface ProfessionalSummaryProps {
   summary: string;
+  experiences: WorkExperienceItem[];
+  projects: ProjectItem[];
+  skills: string[];
 }
 
-const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({ summary }) => {
+const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({ 
+  summary, 
+  experiences, 
+  projects, 
+  skills 
+}) => {
   const handleContactClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const totalExperience = calculateTotalExperience(experiences);
+  const totalProjects = calculateTotalProjects(projects);
+  const totalTechnologies = calculateUniqueTechnologies(experiences, projects, skills);
 
   return (
     <section id="professional-summary" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-nothing-black to-nothing-gray text-white p-8">
@@ -34,15 +63,15 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({ summary }) =>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
-            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">5+</div>
+            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">{totalExperience}</div>
             <div className="text-sm text-gray-300">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">50+</div>
+            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">{totalProjects}</div>
             <div className="text-sm text-gray-300">Projects Completed</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">15+</div>
+            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">{totalTechnologies}</div>
             <div className="text-sm text-gray-300">Technologies</div>
           </div>
         </div>

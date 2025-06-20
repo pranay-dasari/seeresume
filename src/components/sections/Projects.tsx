@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExternalLink, Code, Target } from 'lucide-react';
+import { Code, Target } from 'lucide-react';
 
 interface ProjectItem {
   name: string;
@@ -44,10 +44,6 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                   <div className="w-12 h-12 bg-nothing-orange bg-opacity-10 rounded-lg flex items-center justify-center">
                     <Code className="text-nothing-orange" size={24} />
                   </div>
-                  <ExternalLink 
-                    className="text-nothing-gray group-hover:text-nothing-orange transition-colors cursor-pointer" 
-                    size={20} 
-                  />
                 </div>
 
                 {/* Project Content */}
