@@ -1,32 +1,41 @@
-
 {
   "fullName": "PRANAY DASARI",
   "title": "AI Enthusiast",
   "contact": {
     "phone": "8801645404",
     "email": "dpranaysai2@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/pranay-dasari10?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7ankUqFeTS6K7hCaOG1wHg%3D%3D",
+    "linkedin": "https://www.linkedin.com/in/pranay-dasari10",
     "city": "Bengaluru"
   },
   "professionalSummary": "Passionate developer with 3+ years of experience building scalable web applications. Specialized in Python, TypeScript, and modern AI-driven development tools. Committed to creating user-centric solutions that bridge technology and human experience.",
   "skills": [
-    "Python", "TypeScript", "Pandas", "Numpy", "Seaborn", "Django", 
-    "Fastapi", "MongoDB", "PostgreSQL", "XG-Boost",  "Team Leadership", "Problem Solving"
+    "Python",
+    "TypeScript",
+    "Pandas",
+    "Numpy",
+    "Seaborn",
+    "Django",
+    "FastAPI",
+    "MongoDB",
+    "PostgreSQL",
+    "XGBoost",
+    "Team Leadership",
+    "Problem Solving"
   ],
   "workExperience": [
     {
-      "jobTitle": "Full Stack Developer",
+      "jobTitle": "Senior Backend Developer",
       "company": "EverestIMS Technologies Limited",
       "location": "Bengaluru, Karnataka",
       "startDate": "10/2022",
       "endDate": "Present",
       "achievements": [
-        "Led development of a React-based dashboard serving 10,000+ daily users",
-        "Improved application performance by 40% through code optimization",
-        "Mentored 5 junior developers and established coding standards",
-        "Integrated AI-powered features that increased user engagement by 25%",
-        "Collaborated with design team to implement responsive UI components",
-        "Successfully delivered 15+ projects on time and within budget"
+        "Serving as a Senior Backend Developer in the Enterprise Solutions team, acting as a key interface between product management and end customers to deliver scalable backend features",
+        "Led and delivered microservices-based backend projects for multiple enterprise clients with real-time performance and reliability requirements",
+        "Designed and implemented custom backend solutions to support customer-specific workflows and complex network infrastructure use cases",
+        "Guided and mentored junior developers and QA engineers on system design, testing, and debugging best practices",
+        "Collaborated closely with product teams to prioritize customer requirements, manage sprints, and drive project delivery",
+        "Handled multiple enterprise-level deployments simultaneously, ensuring timely delivery and post-deployment support"
       ]
     },
     {
@@ -36,52 +45,59 @@
       "startDate": "07/2021",
       "endDate": "10/2022",
       "achievements": [
-        "Developed 20+ responsive web applications using React and Vue.js",
-        "Reduced page load times by 35% through performance optimization",
-        "Implemented automated testing suites with 90% code coverage",
-        "Worked closely with UX designers to improve user experience metrics",
-        "Maintained legacy codebases and migrated to modern frameworks"
+        "Worked as a Junior Python Developer, supporting backend feature development and debugging issues in production systems",
+        "Troubleshot and fixed bugs across multiple components, gaining practical exposure to production environments and deployment pipelines",
+        "Learned how educational product ecosystems function at scale, and contributed to team discussions around product logic and modular design",
+        "Collaborated with senior developers and gained hands-on experience working in agile software teams",
+        "Maintained legacy components and contributed to gradual modernization of the platform’s architecture"
       ]
     }
   ],
   "certifications": [
-    { "name": "Google Gen Ai", "date": "11/2022" }
+    {
+      "name": "Google Gen AI",
+      "date": "11/2022"
+    }
   ],
   "projects": [
-  {
-    "name": "Infraon - AIOps",
-    "description": "As a Senior Backend Developer in the Enterprise Solutions team, I led the development of AI-powered dashboards and forecasting tools for IT operations management. The platform integrated predictive analytics and time-series modeling to provide early warning systems, performance forecasts, and actionable insights. I was responsible for implementing key components using scalable data pipelines, integrating machine learning models (e.g., XGBoost, Facebook Prophet), and optimizing backend architecture for real-time operations.",
-    "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "XGBoost", "Facebook Prophet", "Redis", "WebSocket"],
-    "outcomes": "Delivered intelligent observability tools adopted by major Indian enterprises, resulting in a 35% improvement in operational incident response times"
-  },
-  {
-    "name": "Infraon - IPAM (IP Address Management)",
-    "description": "Served as a Senior Developer within the Enterprise Solutions team, overseeing the architecture and development of a robust IP address management (IPAM) system. I designed hierarchical models to manage IP allocations, subnets, and VLANs efficiently across enterprise networks. The platform ensures secure, auditable IP tracking and integrates seamlessly with network monitoring tools.",
-    "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
-    "outcomes": "Deployed across organizations like ISRO, enabling structured IP governance and reducing configuration errors by 25%"
-  },
-  {
-    "name": "Infraon - Network Management Systems (NMS)",
-    "description": "As a Senior Backend Developer in the Enterprise Solutions team, I contributed to the design and delivery of customized network management systems for high-profile clients. I led development and guided two team members in building solutions for network monitoring, alert management, and real-time performance tracking. Our work supported complex client environments by delivering highly available, event-driven systems.",
-    "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
-    "outcomes": "Enabled real-time network monitoring for Indian enterprise clients, improving uptime and reducing troubleshooting time by up to 30%"
-  },
-  {
-    "name": "Adaptive Learning Solutions - Educational Platform",
-    "description": "Worked as a Junior Python Developer responsible for backend feature development and API integration for an adaptive learning platform. Supported core development efforts and implemented automation scripts to improve content delivery and system performance.",
-    "technologies": ["Python", "Flask", "MySQL"],
-    "outcomes": "Contributed to system enhancements that improved learning module efficiency and increased student engagement by 15%"
-  }
-],
-"additionalSections": {
-  "languages": ["English (Fluent)", "Hindi (Fluent)", "Telugu (Native)", "Kannada (Conversational)", "Tamil (Conversational)"],
-  "volunteerWork": [
-    "Volunteer developer at People + AI organization, co-developed Sukoon: An AI-enabled ecosystem for bridging India’s mental health support gaps",
-    "Led the technical development of the platform from scratch, focusing on accessibility, predictive mental health insights, and AI-driven resource allocation",
-    "Collaborated with domain experts to integrate data-driven tools for improving mental health support across underserved communities"
-  ]
-},
-    "publications": [
+    {
+      "name": "Infraon - AIOps",
+      "description": "AIOps is an AI-powered IT operations platform designed to deliver predictive alerts and advanced analytics across enterprise infrastructures. As a Senior Backend Developer in the Enterprise Solutions team, I led backend development for dashboards, reporting modules, and alert prediction engines. The platform integrates forecasting models like Facebook Prophet and XGBoost to process time-series data, enabling anomaly detection and resource optimization. I also contributed to stream processing and message queuing for real-time telemetry ingestion.",
+      "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "XGBoost", "Facebook Prophet", "Redis", "WebSocket"],
+      "outcomes": "Delivered intelligent observability tools adopted by major Indian enterprises, resulting in a 35% improvement in operational incident response times"
+    },
+    {
+      "name": "Infraon - IPAM (IP Address Management)",
+      "description": "Infraon's IPAM system is a centralized solution to manage and allocate IP addresses, subnets, and associated network infrastructure. I worked as a Senior Developer responsible for designing and maintaining hierarchical IP address management structures that support enterprise-scale deployments. I implemented automation features for IP allocation, ensured compliance with organizational policies, and integrated audit trails and reporting. The platform is used by government and defense organizations such as ISRO for secure and traceable network resource tracking.",
+      "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
+      "outcomes": "Deployed across organizations like ISRO, enabling structured IP governance and reducing configuration errors by 25%"
+    },
+    {
+      "name": "Infraon - Network Management Systems (NMS)",
+      "description": "Infraon's NMS is a real-time monitoring and alerting platform for enterprise networks. In my role as a Senior Backend Developer in the Enterprise Solutions team, I built core backend services for tracking device health, generating alerts, and processing SNMP/telemetry data. I worked closely with customers to customize NMS for their environments and mentored two engineers in backend development and testing. The system provides visual dashboards and automated responses for improved uptime and faster issue resolution.",
+      "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
+      "outcomes": "Enabled real-time network monitoring for Indian enterprise clients, improving uptime and reducing troubleshooting time by up to 30%"
+    },
+    {
+      "name": "Adaptive Learning Solutions - Educational Platform",
+      "description": "An interactive platform aimed at delivering personalized learning content using adaptive learning paths. As a Junior Python Developer, I contributed to backend APIs, fixed performance bottlenecks, and built features to support course recommendation and progress tracking. My work helped align learning outcomes with user interaction data while maintaining high code quality and stability.",
+      "technologies": ["Python", "Flask", "MySQL"],
+      "outcomes": "Contributed to system enhancements that improved learning module efficiency and increased student engagement by 15%"
+    }
+  ],
+  "additionalSections": {
+    "languages": [
+      "English (Fluent)",
+      "Hindi (Fluent)",
+      "Telugu (Native)",
+      "Kannada (Conversational)",
+      "Tamil (Conversational)"
+    ],
+    "volunteerWork": [
+      "Volunteer developer at People + AI organization, co-developed Sukoon: An AI-enabled ecosystem for bridging India’s mental health support gaps",
+      "Led the technical development of the platform from scratch, focusing on accessibility, predictive mental health insights, and AI-driven resource allocation",
+      "Collaborated with domain experts to integrate data-driven tools for improving mental health support across underserved communities"
     ]
-  }
+  },
+  "publications": []
 }
