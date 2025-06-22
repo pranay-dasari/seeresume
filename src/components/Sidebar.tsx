@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Home, User, Briefcase, Award, Code, FileText, Phone } from 'lucide-react';
 
@@ -81,10 +80,10 @@ const Sidebar: React.FC<SidebarProps> = ({ sections, activeSection, onSectionCli
               key={sectionId}
               onClick={() => handleSectionClick(sectionId)}
               className={`
-                w-full flex items-center px-6 py-3 text-left transition-all duration-200 hover:bg-nothing-lightGray group
+                w-full flex items-center px-6 py-3 text-left transition-all duration-200 group
                 ${activeSection === sectionId 
-                  ? 'bg-nothing-orange bg-opacity-10 border-r-4 border-nothing-orange text-white bg-nothing-orange' 
-                  : 'text-nothing-gray hover:text-nothing-black'
+                  ? 'bg-nothing-orange border-r-4 border-nothing-orange text-white hover:bg-orange-400' 
+                  : 'text-nothing-gray hover:bg-nothing-lightGray hover:text-nothing-black'
                 }
               `}
             >
