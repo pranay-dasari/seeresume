@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { calculateTotalExperience, calculateTotalProjects, calculateUniqueTechnologies } from '../../utils/experienceUtils';
+import { calculateTotalExperience, calculateTotalProjects } from '../../utils/experienceUtils';
 
 interface WorkExperienceItem {
   jobTitle: string;
@@ -40,7 +40,6 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
 
   const totalExperience = calculateTotalExperience(experiences);
   const totalProjects = calculateTotalProjects(projects);
-  const totalTechnologies = calculateUniqueTechnologies(experiences, projects, skills);
 
   return (
     <section id="professional-summary" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-nothing-black to-nothing-gray text-white p-8">
@@ -61,18 +60,17 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
           </p>
         </div>
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">{totalExperience}</div>
-            <div className="text-sm text-gray-300">Years Experience</div>
+        <div className="mt-12 flex justify-center gap-8">
+          {/* Years of Experience Widget - Orange */}
+          <div className="bg-nothing-orange rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border-2 border-transparent hover:border-orange-400">
+            <div className="text-4xl font-ndot55 text-white mb-3">{totalExperience}</div>
+            <div className="text-lg text-white font-medium">Years Experience</div>
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">{totalProjects}</div>
-            <div className="text-sm text-gray-300">Projects Completed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-ndot55 text-nothing-orange mb-2">{totalTechnologies}</div>
-            <div className="text-sm text-gray-300">Technologies</div>
+          
+          {/* Projects Completed Widget - Black */}
+          <div className="bg-nothing-black rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border-2 border-gray-600 hover:border-gray-400">
+            <div className="text-4xl font-ndot55 text-nothing-orange mb-3">{totalProjects}</div>
+            <div className="text-lg text-white font-medium">Projects Completed</div>
           </div>
         </div>
 

@@ -49,6 +49,12 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom Nothing Tech colors */
+    --nothing-orange: #FF6200;
+    --nothing-black: #1a1a1a;
+    --nothing-gray: #6b7280;
+    --nothing-light-gray: #f3f4f6;
   }
 
   .dark {
@@ -93,6 +99,37 @@
 
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* Custom Tailwind utilities for Nothing Tech colors */
+@layer utilities {
+  .bg-nothing-orange {
+    background-color: var(--nothing-orange);
+  }
+  
+  .text-nothing-orange {
+    color: var(--nothing-orange);
+  }
+  
+  .bg-nothing-black {
+    background-color: var(--nothing-black);
+  }
+  
+  .text-nothing-black {
+    color: var(--nothing-black);
+  }
+  
+  .bg-nothing-gray {
+    background-color: var(--nothing-gray);
+  }
+  
+  .text-nothing-gray {
+    color: var(--nothing-gray);
+  }
+  
+  .bg-nothing-lightGray {
+    background-color: var(--nothing-light-gray);
   }
 }
 
