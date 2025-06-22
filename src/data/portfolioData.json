@@ -48,35 +48,40 @@
     { "name": "Google Gen Ai", "date": "11/2022" }
   ],
   "projects": [
-    {
-      "name": "AI-Powered Portfolio Generator",
-      "description": "A dynamic portfolio website generator that uses AI to create personalized layouts and content optimization based on user data and industry trends.",
-      "technologies": ["React", "TypeScript", "Tailwind CSS", "Supabase", "OpenAI API"],
-      "outcomes": "Generated 500+ unique portfolios with 95% client satisfaction rate"
-    },
-    {
-      "name": "E-Commerce Analytics Dashboard",
-      "description": "Comprehensive analytics platform for e-commerce businesses featuring real-time data visualization, performance metrics, and predictive analytics.",
-      "technologies": ["React", "D3.js", "Node.js", "PostgreSQL", "Redis"],
-      "outcomes": "Helped 50+ businesses increase revenue by average of 22%"
-    },
-    {
-      "name": "Team Collaboration Platform",
-      "description": "Modern project management and team collaboration tool with real-time messaging, file sharing, and integrated video conferencing capabilities.",
-      "technologies": ["React", "Socket.io", "Express.js", "MongoDB", "WebRTC"],
-      "outcomes": "Adopted by 15+ teams with 40% improvement in project delivery time"
-    }
-  ],
-  "additionalSections": {
-    "languages": ["English (Native)", "Spanish (Conversational)", "Hindi (Fluent)"],
-    "volunteerWork": [
-      "Organized monthly tech meetups for local developer community (2022-Present)",
-      "Mentored 20+ students through coding bootcamp programs",
-      "Contributed to open-source projects with 1000+ GitHub stars"
-    ],
+  {
+    "name": "Infraon - AIOps",
+    "description": "As a Senior Backend Developer in the Enterprise Solutions team, I led the development of AI-powered dashboards and forecasting tools for IT operations management. The platform integrated predictive analytics and time-series modeling to provide early warning systems, performance forecasts, and actionable insights. I was responsible for implementing key components using scalable data pipelines, integrating machine learning models (e.g., XGBoost, Facebook Prophet), and optimizing backend architecture for real-time operations.",
+    "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "XGBoost", "Facebook Prophet", "Redis", "WebSocket"],
+    "outcomes": "Delivered intelligent observability tools adopted by major Indian enterprises, resulting in a 35% improvement in operational incident response times"
+  },
+  {
+    "name": "Infraon - IPAM (IP Address Management)",
+    "description": "Served as a Senior Developer within the Enterprise Solutions team, overseeing the architecture and development of a robust IP address management (IPAM) system. I designed hierarchical models to manage IP allocations, subnets, and VLANs efficiently across enterprise networks. The platform ensures secure, auditable IP tracking and integrates seamlessly with network monitoring tools.",
+    "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
+    "outcomes": "Deployed across organizations like ISRO, enabling structured IP governance and reducing configuration errors by 25%"
+  },
+  {
+    "name": "Infraon - Network Management Systems (NMS)",
+    "description": "As a Senior Backend Developer in the Enterprise Solutions team, I contributed to the design and delivery of customized network management systems for high-profile clients. I led development and guided two team members in building solutions for network monitoring, alert management, and real-time performance tracking. Our work supported complex client environments by delivering highly available, event-driven systems.",
+    "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
+    "outcomes": "Enabled real-time network monitoring for Indian enterprise clients, improving uptime and reducing troubleshooting time by up to 30%"
+  },
+  {
+    "name": "Adaptive Learning Solutions - Educational Platform",
+    "description": "Worked as a Junior Python Developer responsible for backend feature development and API integration for an adaptive learning platform. Supported core development efforts and implemented automation scripts to improve content delivery and system performance.",
+    "technologies": ["Python", "Flask", "MySQL"],
+    "outcomes": "Contributed to system enhancements that improved learning module efficiency and increased student engagement by 15%"
+  }
+],
+"additionalSections": {
+  "languages": ["English (Fluent)", "Hindi (Fluent)", "Telugu (Native)", "Kannada (Conversational)", "Tamil (Conversational)"],
+  "volunteerWork": [
+    "Volunteer developer at People + AI organization, co-developed Sukoon: An AI-enabled ecosystem for bridging India’s mental health support gaps",
+    "Led the technical development of the platform from scratch, focusing on accessibility, predictive mental health insights, and AI-driven resource allocation",
+    "Collaborated with domain experts to integrate data-driven tools for improving mental health support across underserved communities"
+  ]
+},
     "publications": [
-      "\"Modern Frontend Architecture: A React Developer's Guide\" - Dev.to (2023)",
-      "\"Building Scalable Applications with Supabase\" - Medium (2023)"
     ]
   }
 }
