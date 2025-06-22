@@ -83,12 +83,12 @@ const Sidebar: React.FC<SidebarProps> = ({ sections, activeSection, onSectionCli
               className={`
                 w-full flex items-center px-6 py-3 text-left transition-all duration-200 hover:bg-nothing-lightGray group
                 ${activeSection === sectionId 
-                  ? 'bg-nothing-orange bg-opacity-10 border-r-4 border-nothing-orange text-nothing-orange' 
+                  ? 'bg-nothing-orange bg-opacity-10 border-r-4 border-nothing-orange text-white bg-nothing-orange' 
                   : 'text-nothing-gray hover:text-nothing-black'
                 }
               `}
             >
-              <span className={`mr-3 ${activeSection === sectionId ? 'text-nothing-orange' : 'text-nothing-gray group-hover:text-nothing-black'}`}>
+              <span className={`mr-3 ${activeSection === sectionId ? 'text-white' : 'text-nothing-gray group-hover:text-nothing-black'}`}>
                 {sectionIcons[sectionId]}
               </span>
               <span className="font-medium">
