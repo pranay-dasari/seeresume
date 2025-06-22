@@ -1,0 +1,81 @@
+
+{
+  "fullName": "PRANAY DASARI",
+  "title": "AI Enthusiast",
+  "contact": {
+    "phone": "8801645404",
+    "email": "dpranaysai2@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/pranay-dasari10?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B7ankUqFeTS6K7hCaOG1wHg%3D%3D",
+    "city": "Bengaluru"
+  },
+  "professionalSummary": "Passionate developer with 3+ years of experience building scalable web applications. Specialized in Python, TypeScript, and modern AI-driven development tools. Committed to creating user-centric solutions that bridge technology and human experience.",
+  "skills": [
+    "Python", "TypeScript", "Pandas", "Numpy", "Seaborn", "Django", 
+    "Fastapi", "MongoDB", "PostgreSQL", "XG-Boost",  "Team Leadership", "Problem Solving"
+  ],
+  "workExperience": [
+    {
+      "jobTitle": "Full Stack Developer",
+      "company": "EverestIMS Technologies Limited",
+      "location": "Bengaluru, Karnataka",
+      "startDate": "10/2022",
+      "endDate": "Present",
+      "achievements": [
+        "Led development of a React-based dashboard serving 10,000+ daily users",
+        "Improved application performance by 40% through code optimization",
+        "Mentored 5 junior developers and established coding standards",
+        "Integrated AI-powered features that increased user engagement by 25%",
+        "Collaborated with design team to implement responsive UI components",
+        "Successfully delivered 15+ projects on time and within budget"
+      ]
+    },
+    {
+      "jobTitle": "Python Developer",
+      "company": "Adaptive Learning Solutions",
+      "location": "Remote",
+      "startDate": "07/2021",
+      "endDate": "10/2022",
+      "achievements": [
+        "Developed 20+ responsive web applications using React and Vue.js",
+        "Reduced page load times by 35% through performance optimization",
+        "Implemented automated testing suites with 90% code coverage",
+        "Worked closely with UX designers to improve user experience metrics",
+        "Maintained legacy codebases and migrated to modern frameworks"
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "Google Gen Ai", "date": "11/2022" }
+  ],
+  "projects": [
+    {
+      "name": "AI-Powered Portfolio Generator",
+      "description": "A dynamic portfolio website generator that uses AI to create personalized layouts and content optimization based on user data and industry trends.",
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Supabase", "OpenAI API"],
+      "outcomes": "Generated 500+ unique portfolios with 95% client satisfaction rate"
+    },
+    {
+      "name": "E-Commerce Analytics Dashboard",
+      "description": "Comprehensive analytics platform for e-commerce businesses featuring real-time data visualization, performance metrics, and predictive analytics.",
+      "technologies": ["React", "D3.js", "Node.js", "PostgreSQL", "Redis"],
+      "outcomes": "Helped 50+ businesses increase revenue by average of 22%"
+    },
+    {
+      "name": "Team Collaboration Platform",
+      "description": "Modern project management and team collaboration tool with real-time messaging, file sharing, and integrated video conferencing capabilities.",
+      "technologies": ["React", "Socket.io", "Express.js", "MongoDB", "WebRTC"],
+      "outcomes": "Adopted by 15+ teams with 40% improvement in project delivery time"
+    }
+  ],
+  "additionalSections": {
+    "languages": ["English (Native)", "Spanish (Conversational)", "Hindi (Fluent)"],
+    "volunteerWork": [
+      "Organized monthly tech meetups for local developer community (2022-Present)",
+      "Mentored 20+ students through coding bootcamp programs",
+      "Contributed to open-source projects with 1000+ GitHub stars"
+    ],
+    "publications": [
+     
+    ]
+  }
+}
