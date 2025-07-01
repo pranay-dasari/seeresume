@@ -1,0 +1,136 @@
+
+# 24/7 GitHub Pages Hosting Setup Guide
+
+## Overview
+This guide will help you host your portfolio website 24/7 on GitHub Pages using your repository:
+https://github.com/ps-dasari/dynamic-resume-showcase-pro
+
+Your live site will be available at:
+https://ps-dasari.github.io/dynamic-resume-showcase-pro/
+
+## Prerequisites
+- GitHub account (you already have this)
+- Your repository: https://github.com/ps-dasari/dynamic-resume-showcase-pro
+- Basic knowledge of Git commands
+
+## Step-by-Step Setup Instructions
+
+### Step 1: Clone Your Repository Locally
+```bash
+git clone https://github.com/ps-dasari/dynamic-resume-showcase-pro.git
+cd dynamic-resume-showcase-pro
+```
+
+### Step 2: Install Dependencies
+```bash
+npm install
+```
+
+### Step 3: Test Locally (Optional but Recommended)
+```bash
+npm run dev
+```
+This will start a local development server at http://localhost:8080
+
+### Step 4: Enable GitHub Pages
+1. Go to your repository: https://github.com/ps-dasari/dynamic-resume-showcase-pro
+2. Click on "Settings" tab
+3. Scroll down to "Pages" section in the left sidebar
+4. Under "Source", select "GitHub Actions"
+5. This will enable GitHub Actions to deploy your site
+
+### Step 5: Push Your Code (If You Made Local Changes)
+```bash
+git add .
+git commit -m "Setup GitHub Pages deployment"
+git push origin main
+```
+
+### Step 6: Monitor Deployment
+1. Go to "Actions" tab in your GitHub repository
+2. You should see a workflow running called "Deploy to GitHub Pages"
+3. Wait for it to complete (usually takes 2-3 minutes)
+4. Once complete, your site will be live!
+
+## Your Live URLs
+
+### Primary URL (GitHub Pages):
+https://ps-dasari.github.io/dynamic-resume-showcase-pro/
+
+### Secondary URL (Lovable):
+Your existing Lovable published URL (as backup)
+
+## How It Works
+
+### Automatic Deployment:
+- Every time you push code to the 'main' branch, GitHub Actions automatically builds and deploys your site
+- No manual intervention needed after initial setup
+- Your site runs 24/7 with 99.9% uptime guaranteed by GitHub
+
+### GitHub Actions Workflow:
+The .github/workflows/deploy.yml file contains the automation that:
+1. Installs Node.js and dependencies
+2. Builds your React application
+3. Deploys it to GitHub Pages
+4. Makes it available at your GitHub Pages URL
+
+## Making Updates
+
+### To update your portfolio:
+1. Make changes to your code
+2. Commit and push to main branch:
+   ```bash
+   git add .
+   git commit -m "Update portfolio content"
+   git push origin main
+   ```
+3. GitHub Actions will automatically rebuild and deploy
+4. Your live site updates in 2-3 minutes
+
+## Troubleshooting
+
+### If deployment fails:
+1. Check the "Actions" tab for error messages
+2. Ensure all dependencies are properly listed in package.json
+3. Verify the build process works locally with `npm run build`
+
+### If site doesn't load:
+1. Check GitHub Pages settings are correctly configured
+2. Ensure the repository is public (private repos need GitHub Pro for Pages)
+3. Wait a few minutes for DNS propagation
+
+## Benefits of This Setup
+
+✅ **24/7 Availability**: Your site is always online
+✅ **Free Hosting**: GitHub Pages is completely free
+✅ **Professional URL**: Uses your GitHub username
+✅ **Automatic Updates**: Push code and it goes live automatically
+✅ **Version Control**: Full Git history of your portfolio
+✅ **Backup**: Your code is safely stored on GitHub
+✅ **Fast Loading**: GitHub's CDN ensures quick page loads worldwide
+
+## Important Notes
+
+1. **Repository must be public** for free GitHub Pages hosting
+2. **Custom domains**: You can add a custom domain later if needed
+3. **HTTPS**: GitHub Pages provides free SSL certificates
+4. **Analytics**: You can add Google Analytics for visitor tracking
+
+## Next Steps After Setup
+
+1. Share your GitHub Pages URL on LinkedIn, resume, and job applications
+2. Consider adding Google Analytics for visitor insights
+3. Set up a custom domain if desired (optional)
+4. Keep your portfolio updated with new projects and experiences
+
+## Support
+
+If you encounter issues:
+1. Check GitHub's official Pages documentation
+2. Review the Actions logs for deployment errors
+3. Ensure your local build works with `npm run build`
+
+Your portfolio will be live 24/7 at:
+https://ps-dasari.github.io/dynamic-resume-showcase-pro/
+
+Happy hosting! 🚀
