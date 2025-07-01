@@ -3,22 +3,22 @@
 
 ## Overview
 This guide will help you host your portfolio website 24/7 on GitHub Pages using your repository:
-https://github.com/ps-dasari/dynamic-resume-showcase-pro
+https://github.com/ps-dasari/seeresume
 
 Your live site will be available at:
-https://ps-dasari.github.io/dynamic-resume-showcase-pro/
+https://ps-dasari.github.io/seeresume/
 
 ## Prerequisites
 - GitHub account (you already have this)
-- Your repository: https://github.com/ps-dasari/dynamic-resume-showcase-pro
+- Your repository: https://github.com/ps-dasari/seeresume
 - Basic knowledge of Git commands
 
 ## Step-by-Step Setup Instructions
 
 ### Step 1: Clone Your Repository Locally
 ```bash
-git clone https://github.com/ps-dasari/dynamic-resume-showcase-pro.git
-cd dynamic-resume-showcase-pro
+git clone https://github.com/ps-dasari/seeresume.git
+cd seeresume
 ```
 
 ### Step 2: Install Dependencies
@@ -33,7 +33,7 @@ npm run dev
 This will start a local development server at http://localhost:8080
 
 ### Step 4: Enable GitHub Pages
-1. Go to your repository: https://github.com/ps-dasari/dynamic-resume-showcase-pro
+1. Go to your repository: https://github.com/ps-dasari/seeresume
 2. Click on "Settings" tab
 3. Scroll down to "Pages" section in the left sidebar
 4. Under "Source", select "GitHub Actions"
@@ -55,7 +55,7 @@ git push origin main
 ## Your Live URLs
 
 ### Primary URL (GitHub Pages):
-https://ps-dasari.github.io/dynamic-resume-showcase-pro/
+https://ps-dasari.github.io/seeresume/
 
 ### Secondary URL (Lovable):
 Your existing Lovable published URL (as backup)
@@ -131,6 +131,6 @@ If you encounter issues:
 3. Ensure your local build works with `npm run build`
 
 Your portfolio will be live 24/7 at:
-https://ps-dasari.github.io/dynamic-resume-showcase-pro/
+https://ps-dasari.github.io/seeresume/
 
 Happy hosting! 🚀
