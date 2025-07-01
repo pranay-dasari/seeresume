@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Only use basename in production (GitHub Pages)
+// Use /seeresume basename for GitHub Pages
 const basename = import.meta.env.PROD ? "/seeresume" : "";
 
 const App = () => (
