@@ -1,3 +1,4 @@
+
 name: Deploy to GitHub Pages
 
 on:
@@ -12,10 +13,11 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  deploy:  # ✅ THIS NAME MUST BE 'deploy'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
+
     steps:
       - uses: actions/checkout@v4
       
