@@ -1,11 +1,9 @@
-
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main  # or your default branch name
 
 permissions:
   contents: read
@@ -13,33 +11,37 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:  # ✅ THIS NAME MUST BE 'deploy'
+  deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          
+          node-version: 18
+
       - name: Install dependencies
         run: npm install
-        
+
       - name: Build
         run: npm run build
-        
+
+      - name: Fix SPA routing for GitHub Pages
+        run: |
+          # Create a copy of index.html named 404.html to enable SPA fallback on GitHub Pages
+          cp dist/index.html dist/404.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
