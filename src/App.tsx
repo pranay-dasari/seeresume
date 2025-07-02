@@ -12,6 +12,10 @@ const queryClient = new QueryClient();
 // Use /seeresume basename for GitHub Pages
 const basename = import.meta.env.PROD ? "/seeresume" : "";
 
+console.log("Environment:", import.meta.env.MODE);
+console.log("Basename:", basename);
+console.log("Current URL:", window.location.href);
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
