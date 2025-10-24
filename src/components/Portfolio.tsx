@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import ProfessionalSummary from './sections/ProfessionalSummary';
-import Skills from './sections/Skills';
 import WorkExperience from './sections/WorkExperience';
 import Certifications from './sections/Certifications';
 import Projects from './sections/Projects';
@@ -16,11 +15,10 @@ const Portfolio: React.FC = () => {
   // Determine which sections to show based on data availability
   const availableSections = [
     'professional-summary',
-    'skills',
     'work-experience',
     ...(portfolioData.certifications && portfolioData.certifications.length > 0 ? ['certifications'] : []),
     ...(portfolioData.projects && portfolioData.projects.length > 0 ? ['projects'] : []),
-    ...(portfolioData.additionalSections && Object.values(portfolioData.additionalSections).some(arr => arr && arr.length > 0) ? ['additional-sections'] : []),
+    ...(portfolioData.additionalSections && Object.values(portfolioData.additionalSections).some(arr => arr && arr.length > 0) ? ['achievements'] : []),
     'contact'
   ];
 
@@ -73,8 +71,6 @@ const Portfolio: React.FC = () => {
           projects={portfolioData.projects || []}
           skills={portfolioData.skills}
         />
-        
-        <Skills skills={portfolioData.skills} />
         
         <WorkExperience experiences={portfolioData.workExperience} />
         

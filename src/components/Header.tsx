@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Home, User, Briefcase, Award, Code, FileText, Phone, Menu, X } from 'lucide-react';
+import { Home, Briefcase, Award, Code, FileText, Phone, Menu, X } from 'lucide-react';
 
 interface HeaderProps {
   fullName: string;
@@ -23,21 +23,19 @@ const Header: React.FC<HeaderProps> = ({
 
   const sectionIcons: { [key: string]: React.ReactNode } = {
     'professional-summary': <Home size={18} />,
-    'skills': <User size={18} />,
     'work-experience': <Briefcase size={18} />,
     'certifications': <Award size={18} />,
     'projects': <Code size={18} />,
-    'additional-sections': <FileText size={18} />,
+    'achievements': <FileText size={18} />,
     'contact': <Phone size={18} />
   };
 
   const sectionLabels: { [key: string]: string } = {
     'professional-summary': 'Summary',
-    'skills': 'Skills',
     'work-experience': 'Experience',
     'certifications': 'Certifications',
     'projects': 'Projects',
-    'additional-sections': 'Additional',
+    'achievements': 'Achievements',
     'contact': 'Contact'
   };
 
@@ -49,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <>
       <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-30 border-b border-gray-200">
-        <div className="flex items-center justify-between px-6 py-4">
+        <div className="flex items-center justify-between px-6 py-2">
           <div>
             <h1 className="text-2xl md:text-3xl font-ndot55 text-nothing-black tracking-tight">
               {fullName}
@@ -75,15 +73,6 @@ const Header: React.FC<HeaderProps> = ({
                 <span className="text-sm">{sectionLabels[sectionId]}</span>
               </button>
             ))}
-            
-            {/* Desktop Call Button */}
-            <a
-              href={`tel:${phoneNumber}`}
-              aria-label={`Call ${fullName}`}
-              className="ml-4 bg-nothing-orange text-white px-5 py-2 rounded-[50px] font-medium transition-all duration-200 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)]"
-            >
-              Call Me
-            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -119,15 +108,6 @@ const Header: React.FC<HeaderProps> = ({
           </div>
         )}
       </header>
-
-      {/* Mobile Floating Call Button */}
-      <a
-        href={`tel:${phoneNumber}`}
-        aria-label={`Call ${fullName}`}
-        className="md:hidden fixed bottom-5 right-5 z-50 bg-nothing-orange text-white px-5 py-2.5 rounded-[50px] font-medium shadow-lg transition-all duration-200 hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)]"
-      >
-        Call Me
-      </a>
     </>
   );
 };

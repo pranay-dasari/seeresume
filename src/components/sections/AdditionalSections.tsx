@@ -53,15 +53,15 @@ const AdditionalSections: React.FC<AdditionalSectionsProps> = ({ additionalSecti
   ].filter(section => section.items.length > 0);
 
   return (
-    <section id="additional-sections" className="min-h-screen bg-nothing-lightGray py-20">
+    <section id="achievements" className="min-h-screen bg-nothing-lightGray py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-ndot55 text-nothing-black mb-4">
-            ADDITIONAL INFO
+            ACHIEVEMENTS
           </h2>
           <div className="w-24 h-1 bg-nothing-orange mx-auto mb-6"></div>
           <p className="text-nothing-gray text-lg">
-            Beyond the professional realm
+            Notable accomplishments and contributions
           </p>
         </div>
 
