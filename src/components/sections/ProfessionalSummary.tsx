@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { calculateTotalExperience, calculateTotalProjects } from '../../utils/experienceUtils';
 
 interface WorkExperienceItem {
@@ -31,12 +32,6 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
   projects, 
   skills 
 }) => {
-  const handleContactClick = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const totalExperience = calculateTotalExperience(experiences);
   const totalProjects = calculateTotalProjects(projects);
@@ -75,12 +70,12 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
         </div>
 
         <div className="mt-12">
-          <button
-            onClick={handleContactClick}
-            className="bg-nothing-orange text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-all duration-200 hover-lift font-semibold text-lg"
+          <Link
+            to="/contact"
+            className="inline-block bg-nothing-orange text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-all duration-200 hover-lift font-semibold text-lg"
           >
             Let's Connect
-          </button>
+          </Link>
         </div>
       </div>
     </section>

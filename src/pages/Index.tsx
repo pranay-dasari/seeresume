@@ -1,8 +1,7 @@
-
-import Portfolio from '../components/Portfolio';
+import HomePage from './HomePage';
 
 const Index = () => {
-  return <Portfolio />;
+  return <HomePage />;
 };
 
 export default Index;
