@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Linkedin, Download, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin, MessageCircle } from 'lucide-react';
 
 interface ContactInfo {
   phone: string;
@@ -11,10 +11,9 @@ interface ContactInfo {
 
 interface ContactProps {
   contact: ContactInfo;
-  onDownloadResume: () => void;
 }
 
-const Contact: React.FC<ContactProps> = ({ contact, onDownloadResume }) => {
+const Contact: React.FC<ContactProps> = ({ contact }) => {
   const contactItems = [
     {
       icon: <Phone size={20} />,
@@ -96,30 +95,23 @@ const Contact: React.FC<ContactProps> = ({ contact, onDownloadResume }) => {
           ))}
         </div>
 
-        {/* Action Buttons Section */}
+        {/* Action Button Section */}
         <div className="bg-gradient-to-r from-nothing-orange to-orange-500 rounded-2xl p-8 text-white animate-fade-in">
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold mb-4">
               Ready to Work Together?
             </h3>
             <p className="text-orange-100">
-              Get in touch or download my resume to learn more about my experience
+              Get in touch to discuss opportunities and collaborations
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <button
               onClick={handleContactClick}
               className="inline-flex items-center justify-center gap-3 bg-white text-nothing-orange px-8 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200 hover-lift font-semibold text-lg"
             >
               <MessageCircle size={20} />
               Contact Me
-            </button>
-            <button
-              onClick={onDownloadResume}
-              className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-nothing-orange transition-all duration-200 hover-lift font-semibold text-lg"
-            >
-              <Download size={20} />
-              Download Resume
             </button>
           </div>
         </div>

@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import Sidebar from './Sidebar';
 import Header from './Header';
 import ProfessionalSummary from './sections/ProfessionalSummary';
 import Skills from './sections/Skills';
@@ -10,7 +9,6 @@ import Projects from './sections/Projects';
 import AdditionalSections from './sections/AdditionalSections';
 import Contact from './sections/Contact';
 import portfolioData from '../data/portfolioData.json';
-import { generatePDF } from '../utils/pdfUtils';
 
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState('professional-summary');
@@ -31,10 +29,6 @@ const Portfolio: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const handleDownloadResume = () => {
-    generatePDF(portfolioData);
   };
 
   // Handle scroll detection for active section
@@ -63,19 +57,16 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Sidebar
-        sections={availableSections}
-        activeSection={activeSection}
-        onSectionClick={handleSectionClick}
-      />
-      
       <Header
         fullName={portfolioData.fullName}
         title={portfolioData.title}
-        onDownloadResume={handleDownloadResume}
+        sections={availableSections}
+        activeSection={activeSection}
+        onSectionClick={handleSectionClick}
+        phoneNumber={portfolioData.contact.phone}
       />
 
-      <main className="ml-0 md:ml-64 pt-20">
+      <main className="pt-20">
         <ProfessionalSummary 
           summary={portfolioData.professionalSummary}
           experiences={portfolioData.workExperience}
@@ -101,8 +92,7 @@ const Portfolio: React.FC = () => {
         )}
         
         <Contact 
-          contact={portfolioData.contact} 
-          onDownloadResume={handleDownloadResume}
+          contact={portfolioData.contact}
         />
       </main>
     </div>
