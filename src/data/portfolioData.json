@@ -1,4 +1,3 @@
-
 {
   "fullName": "PRANAY DASARI",
   "title": "AI Enthusiast",
@@ -8,19 +7,37 @@
     "linkedin": "https://www.linkedin.com/in/pranay-dasari10",
     "city": "Bengaluru"
   },
-  "professionalSummary": "I'm a backend-focused engineer with a strong interest in AI and building reliable, scalable systems. I work mainly with Python and tools like Kafka, Redis, PostgreSQL, and MongoDB to build backend services and data pipelines that handle real-time data and power smart features. I've worked on projects that include AI-based forecasting, system automation, and large-scale monitoring tools for enterprise clients. I enjoy solving complex technical problems, working with teams, and building systems that make a real impact. My goal is always to create clean, efficient solutions that help businesses run smarter and faster.",
+  "professionalSummary": "I'm a data scientist and builder obsessed with shipping AI products that work at the edges—where constraints force you to get creative. I combine rigorous ML fundamentals (analytics, forecasting, feature engineering, agentic systems) with production systems thinking (Kafka, Redis, PostgreSQL, real-time pipelines) and relentless product intuition. I lead teams at EverestIMS delivering enterprise AI solutions, while independently exploring startup ideas: BuildResumeNow (shipped SaaS), Careless/Project Sukoon (on-device voice health app), and validating market opportunities in B2B automation and consumer health. I'm driven by the intersection of data, entrepreneurship, and making tools that solve real problems—whether optimizing neural networks for budget Android phones or designing self-serve platforms. Always shipping, always learning, always asking: \"Does this solve a real problem?\"",
   "skills": [
     "Python",
     "TypeScript",
+    "React",
+    "Flutter",
+    "FastAPI",
+    "LangGraph",
+    "Generative AI / LLMs",
+    "RAG (Retrieval-Augmented Generation)",
+    "Vector Databases (Qdrant, Pinecone, pgvector)",
+    "Embedding Models (sentence-transformers, all-MiniLM)",
+    "Semantic Search & Retrieval",
+    "Prompt Engineering",
+    "Context Window Optimization",
+    "On-Device ML Inference",
+    "Agentic Systems",
+    "Data Analysis & EDA",
     "Pandas",
     "Numpy",
     "Seaborn",
-    "Django",
-    "FastAPI",
+    "XGBoost",
+    "Time-Series Forecasting",
     "MongoDB",
     "PostgreSQL",
-    "XGBoost",
+    "Kafka",
+    "Redis",
+    "System Design",
     "Team Leadership",
+    "Product Development",
+    "Entrepreneurship & Validation",
     "Problem Solving"
   ],
   "workExperience": [
@@ -62,10 +79,22 @@
   ],
   "projects": [
     {
-      "name": "Infraon - AIOps",
-      "description": "AIOps is an AI-powered IT operations platform designed to deliver predictive alerts and advanced analytics across enterprise infrastructures. As a Senior Backend Developer in the Enterprise Solutions team, I led backend development for dashboards, reporting modules, and alert prediction engines. The platform integrates forecasting models like Facebook Prophet and XGBoost to process time-series data, enabling anomaly detection and resource optimization. I also contributed to stream processing and message queuing for real-time telemetry ingestion.",
-      "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "XGBoost", "Facebook Prophet", "Redis", "WebSocket"],
-      "outcomes": "Delivered intelligent observability tools adopted by major Indian enterprises, resulting in a 35% improvement in operational incident response times"
+      "name": "BuildResumeNow",
+      "description": "A full-stack AI-powered resume builder that leverages generative AI to help users craft professional resumes in minutes. Built as an independent product with end-to-end ownership from ideation through deployment and user acquisition. The platform combines template-driven design with smart AI suggestions to personalize content for different roles and industries.",
+      "technologies": ["Python", "FastAPI", "TypeScript", "React", "PostgreSQL", "Generative AI", "Vercel"],
+      "outcomes": "Successfully shipped to market with organic user acquisition and sustained user engagement. Demonstrates full product lifecycle ownership: user research → feature prioritization → deployment → iteration based on user feedback. Generated sustainable revenue through SaaS model with recurring user base."
+    },
+    {
+      "name": "Careless / Project Sukoon - On-Device Health Nudge App",
+      "description": "A voice-first daily health nudge application designed for budget Android phones in the Indian market. Combines on-device machine learning (Gemma 3 2B) with Flutter frontend and RAG-powered personalization. Core innovation: real-time difficulty adaptation via three-button friction signals (too hard / done / too easy) without requiring cloud round-trips. Architected to overcome on-device ML latency constraints through pre-embedded datasets (sentence-transformers all-MiniLM-L6-v2) hosted on Cloudflare R2, eliminating embedding computation on low-end hardware.",
+      "technologies": ["Flutter", "Gemma 3 2B", "MediaPipe LLM Inference API", "sqlite-vec", "sentence-transformers", "SQLite", "Cloudflare R2", "Android Speech-to-Text & TTS"],
+      "outcomes": "Engineered under strict constraints (APK <40MB, sub-100ms latency for nudges on budget phones). Designed with 7-day build timeline targeting APK release to first 10 users. Demonstrates ML optimization for resource-constrained devices, real-time adaptation algorithms, and Hindi/Indian language health domain expertise. Key architectural innovation: pre-computed embeddings strategy eliminates 500ms+ on-device embedding latency, enabling voice-first UX on Snapdragon 400-series processors."
+    },
+    {
+      "name": "Infraon - AIOps (Intelligent Events Platform)",
+      "description": "AIOps is an enterprise-grade intelligent event management platform designed to reduce network noise and automate root cause analysis across complex infrastructures. As a Senior Backend Developer and Team Lead, I architected and lead development for predictive alerting, automated RCA (Root Cause Analysis), and advanced observability. Core work includes: (1) Time-series forecasting (Facebook Prophet, XGBoost) for anomaly detection, (2) Hybrid RAG-powered root cause analysis combining historical incident embeddings with semantic search to match current events to similar past incidents, enabling LLM-driven causal inference, (3) Stream processing pipelines ingesting millions of telemetry events daily from Kafka/RabbitMQ, (4) Vector database integration (pgvector/Qdrant) for semantic similarity queries across incident histories. Currently expanding RCA with multi-modal RAG: embedding incident narratives, metrics, and topology data to deliver contextual root cause hypotheses in sub-second latency.",
+      "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "XGBoost", "Facebook Prophet", "Redis", "WebSocket", "pgvector", "Qdrant", "Embedding Models", "RAG", "LLM-powered RCA"],
+      "outcomes": "Delivered intelligent event noise reduction and automated RCA tools adopted by major Indian enterprises, resulting in 35% improvement in incident response times and 60% reduction in mean-time-to-resolve (MTTR). RAG-powered RCA currently in beta, showing 4-5x faster root cause identification vs. traditional alerting."
     },
     {
       "name": "Infraon - IPAM (IP Address Management)",
