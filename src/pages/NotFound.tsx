@@ -12,7 +12,6 @@ const NotFound = () => {
     );
     console.log("Full location object:", location);
     console.log("Current URL:", window.location.href);
-    console.log("Basename should be:", import.meta.env.PROD ? "/seeresume" : "");
   }, [location.pathname]);
 
   return (
@@ -26,7 +25,7 @@ const NotFound = () => {
         <p className="text-sm text-gray-500 mb-4">
           Current URL: {window.location.href}
         </p>
-        <a href={import.meta.env.PROD ? "/seeresume/" : "/"} className="text-blue-500 hover:text-blue-700 underline">
+        <a href={import.meta.env.BASE_URL} className="text-blue-500 hover:text-blue-700 underline">
           Return to Home
         </a>
       </div>
