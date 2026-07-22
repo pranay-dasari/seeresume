@@ -48,7 +48,7 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
         
         <div className="mb-8">
           <h3 className="text-2xl md:text-3xl font-ndot55 text-white mb-6">
-            Hi, I'm Pranay - A Backend Developer
+            Data Scientist | AI Builder | Software Engineer
           </h3>
           <p className="text-lg md:text-xl leading-relaxed text-gray-200 font-light">
             {summary}
