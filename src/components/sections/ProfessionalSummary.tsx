@@ -62,10 +62,10 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
             <div className="text-lg text-nothing-black font-medium">Years Experience</div>
           </div>
 
-          {/* Projects Completed Widget */}
+          {/* Projects Built Widget */}
           <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift border border-gray-200 hover:border-nothing-orange">
             <div className="text-4xl font-ndot55 text-nothing-orange mb-3">{totalProjects}</div>
-            <div className="text-lg text-nothing-black font-medium">Projects Completed</div>
+            <div className="text-lg text-nothing-black font-medium">Projects Built</div>
           </div>
         </div>
 
