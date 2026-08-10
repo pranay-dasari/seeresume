@@ -25,9 +25,9 @@ const TABS: { key: ProjectType | 'all'; label: string }[] = [
 ];
 
 const TYPE_BADGE_STYLES: Record<ProjectType, string> = {
-  personal: 'bg-orange-50 text-orange-600',
-  work: 'bg-blue-50 text-blue-600',
-  volunteer: 'bg-green-50 text-green-600'
+  personal: 'bg-white text-nothing-orange border border-nothing-orange',
+  work: 'bg-white text-nothing-orange border border-nothing-orange',
+  volunteer: 'bg-white text-nothing-orange border border-nothing-orange'
 };
 
 const TYPE_LABELS: Record<ProjectType, string> = {

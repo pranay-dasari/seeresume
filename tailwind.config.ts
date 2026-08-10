@@ -66,7 +66,7 @@ export default {
 				// Nothing Tech color palette
 				nothing: {
 					orange: '#FF6200',
-					black: '#000000',
+					black: '#141414',
 					white: '#FFFFFF',
 					gray: '#4A4A4A',
 					lightGray: '#F5F5F5'

@@ -1,13 +1,13 @@
 {
   "fullName": "PRANAY DASARI",
-  "title": "AI Enthusiast",
+  "title": "Data Scientist & AI Systems Builder",
   "contact": {
     "phone": "8801645404",
     "email": "dpranaysai2@gmail.com",
     "linkedin": "https://www.linkedin.com/in/pranay-dasari10",
     "city": "Bengaluru"
   },
-  "professionalSummary": "I'm a data scientist and builder obsessed with shipping AI products that work at the edges, where constraints force you to get creative. I combine rigorous ML fundamentals (analytics, forecasting, feature engineering, agentic systems) with production systems thinking (Kafka, Redis, PostgreSQL, real-time pipelines) and relentless product intuition. I lead teams at EverestIMS delivering enterprise AI solutions, while independently exploring startup ideas: BuildResumeNow (shipped SaaS) and SaarthiX (voice-first browser assistant), alongside open-source volunteer work on Project Sukoon (AI for mental health, People+AI), and validating market opportunities in B2B automation and consumer health. I'm driven by the intersection of data, entrepreneurship, and making tools that solve real problems, whether optimizing neural networks for budget Android phones or designing self-serve platforms. Always shipping, always learning, always asking: \"Does this solve a real problem?\"",
+  "professionalSummary": "Data scientist and builder shipping AI products under real-world constraints. I lead the AI/ML team at EverestIMS building production RAG and forecasting systems, while independently building side projects like BuildResumeNow and SaarthiX. I also volunteer as a tech consultant, advising small teams and early-stage startups on their tech solutions. Always asking: does this solve a real problem?",
   "skills": [
     "Python",
     "TypeScript",
@@ -42,7 +42,7 @@
   ],
   "workExperience": [
     {
-      "jobTitle": "Team Lead & Jr. Data Scientist",
+      "jobTitle": "Data Scientist",
       "company": "EverestIMS Technologies Limited",
       "location": "Bengaluru, Karnataka",
       "startDate": "12/2024",

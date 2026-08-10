@@ -37,35 +37,35 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
   const totalProjects = calculateTotalProjects(projects);
 
   return (
-    <section id="professional-summary" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-nothing-black to-nothing-gray text-white p-8">
+    <section id="professional-summary" className="min-h-screen flex items-center justify-center bg-white p-8">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
-          <h2 className="text-4xl md:text-6xl font-ndot55 mb-4 text-nothing-orange">
+          <h2 className="text-4xl md:text-6xl font-ndot55 mb-4 text-nothing-black">
             WELCOME
           </h2>
           <div className="w-24 h-1 bg-nothing-orange mx-auto mb-8"></div>
         </div>
-        
+
         <div className="mb-8">
-          <h3 className="text-2xl md:text-3xl font-ndot55 text-white mb-6">
+          <h3 className="text-2xl md:text-3xl font-ndot55 text-nothing-black mb-6">
             Data Scientist | AI Builder | Software Engineer
           </h3>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-200 font-light">
+          <p className="text-lg md:text-xl leading-relaxed text-nothing-gray font-light">
             {summary}
           </p>
         </div>
-        
+
         <div className="mt-12 flex justify-center gap-8">
-          {/* Years of Experience Widget - Orange */}
-          <div className="bg-nothing-orange rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border-2 border-transparent hover:border-orange-400">
-            <div className="text-4xl font-ndot55 text-white mb-3">{totalExperience}</div>
-            <div className="text-lg text-white font-medium">Years Experience</div>
+          {/* Years of Experience Widget */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift border border-gray-200 hover:border-nothing-orange">
+            <div className="text-4xl font-ndot55 text-nothing-orange mb-3">{totalExperience}</div>
+            <div className="text-lg text-nothing-black font-medium">Years Experience</div>
           </div>
-          
-          {/* Projects Completed Widget - Black */}
-          <div className="bg-nothing-black rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border-2 border-gray-600 hover:border-gray-400">
+
+          {/* Projects Completed Widget */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover-lift border border-gray-200 hover:border-nothing-orange">
             <div className="text-4xl font-ndot55 text-nothing-orange mb-3">{totalProjects}</div>
-            <div className="text-lg text-white font-medium">Projects Completed</div>
+            <div className="text-lg text-nothing-black font-medium">Projects Completed</div>
           </div>
         </div>
 
