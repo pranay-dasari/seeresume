@@ -7,7 +7,7 @@
     "linkedin": "https://www.linkedin.com/in/pranay-dasari10",
     "city": "Bengaluru"
   },
-  "professionalSummary": "I'm a data scientist and builder obsessed with shipping AI products that work at the edges—where constraints force you to get creative. I combine rigorous ML fundamentals (analytics, forecasting, feature engineering, agentic systems) with production systems thinking (Kafka, Redis, PostgreSQL, real-time pipelines) and relentless product intuition. I lead teams at EverestIMS delivering enterprise AI solutions, while independently exploring startup ideas: BuildResumeNow (shipped SaaS), Careless/Project Sukoon (on-device voice health app), and validating market opportunities in B2B automation and consumer health. I'm driven by the intersection of data, entrepreneurship, and making tools that solve real problems—whether optimizing neural networks for budget Android phones or designing self-serve platforms. Always shipping, always learning, always asking: \"Does this solve a real problem?\"",
+  "professionalSummary": "I'm a data scientist and builder obsessed with shipping AI products that work at the edges, where constraints force you to get creative. I combine rigorous ML fundamentals (analytics, forecasting, feature engineering, agentic systems) with production systems thinking (Kafka, Redis, PostgreSQL, real-time pipelines) and relentless product intuition. I lead teams at EverestIMS delivering enterprise AI solutions, while independently exploring startup ideas: BuildResumeNow (shipped SaaS) and SaarthiX (voice-first browser assistant), alongside open-source volunteer work on Project Sukoon (AI for mental health, People+AI), and validating market opportunities in B2B automation and consumer health. I'm driven by the intersection of data, entrepreneurship, and making tools that solve real problems, whether optimizing neural networks for budget Android phones or designing self-serve platforms. Always shipping, always learning, always asking: \"Does this solve a real problem?\"",
   "skills": [
     "Python",
     "TypeScript",
@@ -42,13 +42,25 @@
   ],
   "workExperience": [
     {
-      "jobTitle": "Senior Backend Developer",
+      "jobTitle": "Team Lead & Jr. Data Scientist",
+      "company": "EverestIMS Technologies Limited",
+      "location": "Bengaluru, Karnataka",
+      "startDate": "12/2024",
+      "endDate": "Present",
+      "achievements": [
+        "Lead a team delivering AI/ML features across the product",
+        "Built hybrid RAG pipelines for context-aware retrieval",
+        "Developed XGBoost models for forecasting and anomaly detection"
+      ]
+    },
+    {
+      "jobTitle": "Senior Full Stack Developer",
       "company": "EverestIMS Technologies Limited",
       "location": "Bengaluru, Karnataka",
       "startDate": "10/2022",
-      "endDate": "Present",
+      "endDate": "12/2024",
       "achievements": [
-        "Serving as a Senior Backend Developer in the Enterprise Solutions team, acting as a key interface between product management and end customers to deliver scalable backend features",
+        "Served as a Senior Full Stack Developer in the Enterprise Solutions team, acting as a key interface between product management and end customers to deliver scalable features",
         "Led and delivered microservices-based backend projects for multiple enterprise clients with real-time performance and reliability requirements",
         "Designed and implemented custom backend solutions to support customer-specific workflows and complex network infrastructure use cases",
         "Guided and mentored junior developers and QA engineers on system design, testing, and debugging best practices",
@@ -80,36 +92,60 @@
   "projects": [
     {
       "name": "BuildResumeNow",
+      "type": "personal",
       "description": "A full-stack AI-powered resume builder that leverages generative AI to help users craft professional resumes in minutes. Built as an independent product with end-to-end ownership from ideation through deployment and user acquisition. The platform combines template-driven design with smart AI suggestions to personalize content for different roles and industries.",
       "technologies": ["Python", "FastAPI", "TypeScript", "React", "PostgreSQL", "Generative AI", "Vercel"],
-      "outcomes": "Successfully shipped to market with organic user acquisition and sustained user engagement. Demonstrates full product lifecycle ownership: user research → feature prioritization → deployment → iteration based on user feedback. Generated sustainable revenue through SaaS model with recurring user base."
+      "outcomes": "Successfully shipped to market with organic user acquisition and sustained user engagement. Demonstrates full product lifecycle ownership: user research → feature prioritization → deployment → iteration based on user feedback. Generated sustainable revenue through SaaS model with recurring user base.",
+      "link": "https://buildresumenow.in/"
     },
     {
-      "name": "Careless / Project Sukoon - On-Device Health Nudge App",
-      "description": "A voice-first daily health nudge application designed for budget Android phones in the Indian market. Combines on-device machine learning (Gemma 3 2B) with Flutter frontend and RAG-powered personalization. Core innovation: real-time difficulty adaptation via three-button friction signals (too hard / done / too easy) without requiring cloud round-trips. Architected to overcome on-device ML latency constraints through pre-embedded datasets (sentence-transformers all-MiniLM-L6-v2) hosted on Cloudflare R2, eliminating embedding computation on low-end hardware.",
-      "technologies": ["Flutter", "Gemma 3 2B", "MediaPipe LLM Inference API", "sqlite-vec", "sentence-transformers", "SQLite", "Cloudflare R2", "Android Speech-to-Text & TTS"],
-      "outcomes": "Engineered under strict constraints (APK <40MB, sub-100ms latency for nudges on budget phones). Designed with 7-day build timeline targeting APK release to first 10 users. Demonstrates ML optimization for resource-constrained devices, real-time adaptation algorithms, and Hindi/Indian language health domain expertise. Key architectural innovation: pre-computed embeddings strategy eliminates 500ms+ on-device embedding latency, enabling voice-first UX on Snapdragon 400-series processors."
+      "name": "SaarthiX",
+      "type": "personal",
+      "description": "A Chrome extension (Manifest V3) that turns any webpage into a multilingual voice assistant for India's next billion internet users. Users speak to any page and get it explained aloud in their own language, with an agentic tool-use loop letting the LLM pull page context (headings, sections, targeted text) before answering, plus voice-driven, conversational form-filling backed by a locally encrypted user profile.",
+      "technologies": ["JavaScript", "Chrome Extensions (Manifest V3)", "Sarvam Saarika (STT)", "Sarvam-30B", "Sarvam Bulbul (TTS)", "@mozilla/readability", "Web Audio API", "Web Crypto (AES-256-GCM)"],
+      "outcomes": "Led and developed the core voice loop with a 3-person team using clearly owned module contracts: mic capture, page-aware speech-to-text, agentic reasoning, and text-to-speech working end-to-end, plus a working voice-driven form-fill flow. Evolved the product from a browser extension into an embeddable widget portals can integrate and pay for, keeping the extension as a live sales demo.",
+      "link": "https://github.com/pranay-dasari/SaarthiX"
+    },
+    {
+      "name": "LinkedIn Automation Agent",
+      "type": "personal",
+      "description": "A self-running LinkedIn content pipeline that scouts engineering blogs from top Indian tech companies, rewrites the best ones into first-person LinkedIn posts in my own voice, and auto-publishes them with the source link dropped as the first comment to protect feed reach. Built as a custom multi-agent pipeline: Curator (scores relevance/angle) → Writer (drafts in-persona) → Critic (checklist review with hard-ban retries) → Mix Governor (prevents topic flooding) → Uniqueness Checker (RAG-style semantic dedup via sentence-transformer embeddings against post history), before anything goes live. Actively iterating: currently on v2 of the pipeline after multiple rounds of prompt and guardrail tuning.",
+      "technologies": ["Python", "Multi-Agent Orchestration", "RAG (Embedding-based Dedup)", "sentence-transformers", "SQLite", "Guardrails / Critic Loop", "LinkedIn API", "OpenRouter / Gemini / Groq LLMs"],
+      "outcomes": "Fully automated, guardrailed content pipeline that sources, writes, critiques, and publishes LinkedIn posts with zero manual editing, currently in active development with ongoing fine-tuning of the Critic and Uniqueness gates to improve post quality and reduce repetition.",
+      "link": "https://www.linkedin.com/in/pranay-dasari10"
+    },
+    {
+      "name": "Project Sukoon (People+AI) - Volunteer",
+      "type": "volunteer",
+      "description": "An open-source initiative under the People+AI collective applying Digital Public Infrastructure (DPI) principles to build accessible, AI-powered mental health support for India. Volunteered in a team-management and stakeholder-coordination capacity rather than pure engineering: helped organize and manage the distributed technical working group, and drove outreach to bring in domain experts (psychiatrists, psychologists, and clinical advisors) to ground the product's L1/L2/L3 support design in real clinical practice.",
+      "technologies": ["RAG", "Regional Language ASR/TTS", "Open Source", "Cross-functional Team Coordination"],
+      "outcomes": "Helped coordinate a distributed, cross-functional open-source team (engineering, product, UX research, clinical advisors) and successfully brought in practicing doctors and psychologists as domain advisors, grounding the AI-assisted mental health support design in real clinical guidance.",
+      "link": "https://docs.google.com/document/d/1H8-oJmMy0r28kYup9vqt8VGDlY_cCFW_2M07XJxWpFU/edit?tab=t.0"
     },
     {
       "name": "Infraon - AIOps (Intelligent Events Platform)",
+      "type": "work",
       "description": "AIOps is an enterprise-grade intelligent event management platform designed to reduce network noise and automate root cause analysis across complex infrastructures. As a Senior Backend Developer and Team Lead, I architected and lead development for predictive alerting, automated RCA (Root Cause Analysis), and advanced observability. Core work includes: (1) Time-series forecasting (Facebook Prophet, XGBoost) for anomaly detection, (2) Hybrid RAG-powered root cause analysis combining historical incident embeddings with semantic search to match current events to similar past incidents, enabling LLM-driven causal inference, (3) Stream processing pipelines ingesting millions of telemetry events daily from Kafka/RabbitMQ, (4) Vector database integration (pgvector/Qdrant) for semantic similarity queries across incident histories. Currently expanding RCA with multi-modal RAG: embedding incident narratives, metrics, and topology data to deliver contextual root cause hypotheses in sub-second latency.",
       "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "XGBoost", "Facebook Prophet", "Redis", "WebSocket", "pgvector", "Qdrant", "Embedding Models", "RAG", "LLM-powered RCA"],
       "outcomes": "Delivered intelligent event noise reduction and automated RCA tools adopted by major Indian enterprises, resulting in 35% improvement in incident response times and 60% reduction in mean-time-to-resolve (MTTR). RAG-powered RCA currently in beta, showing 4-5x faster root cause identification vs. traditional alerting."
     },
     {
       "name": "Infraon - IPAM (IP Address Management)",
+      "type": "work",
       "description": "Infraon's IPAM system is a centralized solution to manage and allocate IP addresses, subnets, and associated network infrastructure. I worked as a Senior Developer responsible for designing and maintaining hierarchical IP address management structures that support enterprise-scale deployments. I implemented automation features for IP allocation, ensured compliance with organizational policies, and integrated audit trails and reporting. The platform is used by government and defense organizations such as ISRO for secure and traceable network resource tracking.",
       "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
       "outcomes": "Deployed across organizations like ISRO, enabling structured IP governance and reducing configuration errors by 25%"
     },
     {
       "name": "Infraon - Network Management Systems (NMS)",
+      "type": "work",
       "description": "Infraon's NMS is a real-time monitoring and alerting platform for enterprise networks. In my role as a Senior Backend Developer in the Enterprise Solutions team, I built core backend services for tracking device health, generating alerts, and processing SNMP/telemetry data. I worked closely with customers to customize NMS for their environments and mentored two engineers in backend development and testing. The system provides visual dashboards and automated responses for improved uptime and faster issue resolution.",
       "technologies": ["Python", "MongoDB", "PostgreSQL", "RabbitMQ", "Kafka", "Redis", "WebSocket"],
       "outcomes": "Enabled real-time network monitoring for Indian enterprise clients, improving uptime and reducing troubleshooting time by up to 30%"
     },
     {
       "name": "Adaptive Learning Solutions - Educational Platform",
+      "type": "work",
       "description": "An interactive platform aimed at delivering personalized learning content using adaptive learning paths. As a Junior Python Developer, I contributed to backend APIs, fixed performance bottlenecks, and built features to support course recommendation and progress tracking. My work helped align learning outcomes with user interaction data while maintaining high code quality and stability.",
       "technologies": ["Python", "Flask", "MySQL"],
       "outcomes": "Contributed to system enhancements that improved learning module efficiency and increased student engagement by 15%"
@@ -124,9 +160,11 @@
       "Tamil (Conversational)"
     ],
     "volunteerWork": [
-      "Volunteer developer at People + AI organization, co-developed Sukoon: An AI-enabled ecosystem for bridging India's mental health support gaps",
-      "Led the technical development of the platform from scratch, focusing on accessibility, predictive mental health insights, and AI-driven resource allocation",
-      "Collaborated with domain experts to integrate data-driven tools for improving mental health support across underserved communities"
+      "Technical volunteer (2023) on Project Sukoon, an open-source initiative under the People+AI collective applying Digital Public Infrastructure (DPI) principles to build accessible, AI-powered mental health support for India",
+      "Contributed to designing a privacy-first AI companion offering tiered support: L1 self-help via RAG-based resources, L2 escalation to professional counsellors, and L3 peer/community support",
+      "Collaborated with psychologists, researchers, and a distributed open-source engineering team to prototype culturally-aware, regional-language mental health screening and support flows",
+      "Worked within the technical/coding working group alongside product strategy, UX research, and clinical advisors to shape the project's use cases and implementation roadmap",
+      "Reference: https://docs.google.com/document/d/1H8-oJmMy0r28kYup9vqt8VGDlY_cCFW_2M07XJxWpFU/edit?tab=t.0"
     ],
     "publications": []
   }

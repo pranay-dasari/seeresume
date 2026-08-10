@@ -82,15 +82,32 @@ const AdditionalSections: React.FC<AdditionalSectionsProps> = ({ additionalSecti
               </div>
 
               <ul className="space-y-3">
-                {section.items.map((item, itemIndex) => (
-                  <li
-                    key={itemIndex}
-                    className="flex items-start gap-3 text-nothing-gray"
-                  >
-                    <div className="w-2 h-2 bg-nothing-orange rounded-full mt-2 flex-shrink-0"></div>
-                    <span>{item}</span>
-                  </li>
-                ))}
+                {section.items.map((item, itemIndex) => {
+                  const urlMatch = item.match(/^(.*?)(https?:\/\/\S+)$/);
+                  return (
+                    <li
+                      key={itemIndex}
+                      className="flex items-start gap-3 text-nothing-gray"
+                    >
+                      <div className="w-2 h-2 bg-nothing-orange rounded-full mt-2 flex-shrink-0"></div>
+                      {urlMatch ? (
+                        <span>
+                          {urlMatch[1]}
+                          <a
+                            href={urlMatch[2]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-nothing-orange underline hover:no-underline break-all"
+                          >
+                            {urlMatch[2]}
+                          </a>
+                        </span>
+                      ) : (
+                        <span>{item}</span>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Briefcase, Award, Code, FileText, Phone, Menu, X } from 'lucide-react';
+import { Home, Briefcase, Code, FileText, Phone, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 interface HeaderProps {
@@ -19,7 +19,6 @@ const Header: React.FC<HeaderProps> = ({
   const routes = [
     { path: '/', label: 'Summary', icon: <Home size={18} /> },
     { path: '/experience', label: 'Experience', icon: <Briefcase size={18} /> },
-    { path: '/certifications', label: 'Certifications', icon: <Award size={18} /> },
     { path: '/projects', label: 'Projects', icon: <Code size={18} /> },
     { path: '/achievements', label: 'Achievements', icon: <FileText size={18} /> },
     { path: '/contact', label: 'Contact', icon: <Phone size={18} /> }
