@@ -107,12 +107,27 @@
       "link": "https://github.com/pranay-dasari/SaarthiX"
     },
     {
+      "name": "Parakh",
+      "type": "personal",
+      "description": "A stock-market companion app for Indian retail investors that turns the daily flood of BSE/NSE corporate filings into the few that matter. A pipeline ingests announcements from both exchanges' undocumented feeds into an append-only raw store, normalizes the two very different formats, and classifies each filing into 26 event types with a versioned rules engine (so an LLM classifier can later be compared side by side on identical rows). Around it sits a FastAPI backend (watchlists, paper portfolios, price alerts, split-adjusted price history, company fundamentals, F&O chain, push notifications, broker trade-file import) and a Flutter mobile app with a stock detail page, portfolio and a filing feed. Built solo, end to end.",
+      "technologies": ["Python", "FastAPI", "PostgreSQL", "Flutter", "Dart", "Firebase Cloud Messaging", "Render", "launchd"],
+      "outcomes": "Working end to end against both live exchange feeds: on a single trading day (11 Sep 2026) it ingested 1,343 announcements across 959 securities and flagged 27% as potentially price-moving, separating them from routine filings like trading-window closures. Backend is deployed on Render and an Android build is in private beta with friends. 220+ commits since September 2026, still in active development.",
+      "link": "https://github.com/pranay-dasari/parakh"
+    },
+    {
       "name": "LinkedIn Automation Agent",
       "type": "personal",
       "description": "A self-running LinkedIn content pipeline that scouts engineering blogs from top Indian tech companies, rewrites the best ones into first-person LinkedIn posts in my own voice, and auto-publishes them with the source link dropped as the first comment to protect feed reach. Built as a custom multi-agent pipeline: Curator (scores relevance/angle) → Writer (drafts in-persona) → Critic (checklist review with hard-ban retries) → Mix Governor (prevents topic flooding) → Uniqueness Checker (RAG-style semantic dedup via sentence-transformer embeddings against post history), before anything goes live. Actively iterating: currently on v2 of the pipeline after multiple rounds of prompt and guardrail tuning.",
       "technologies": ["Python", "Multi-Agent Orchestration", "RAG (Embedding-based Dedup)", "sentence-transformers", "SQLite", "Guardrails / Critic Loop", "LinkedIn API", "OpenRouter / Gemini / Groq LLMs"],
       "outcomes": "Fully automated, guardrailed content pipeline that sources, writes, critiques, and publishes LinkedIn posts with zero manual editing, currently in active development with ongoing fine-tuning of the Critic and Uniqueness gates to improve post quality and reduce repetition.",
       "link": "https://www.linkedin.com/in/pranay-dasari10"
+    },
+    {
+      "name": "Slyz",
+      "type": "personal",
+      "description": "A mobile expense tracking app that simplifies splitting tasks and bills among groups. Built as a full-stack Flutter application with Firebase backend, supporting iOS (App Store) and Android deployments. Features real-time sync, multi-user group management, and flexible expense splitting calculations.",
+      "technologies": ["Flutter", "Dart", "Firebase (Auth, Firestore, Storage)", "Google Sign-In", "Apple Sign-In", "Local Notifications"],
+      "outcomes": "Successfully launched on iOS App Store (v1.0.1) with complete end-to-end ownership: product design, app development, backend infrastructure, UI/UX refinement, and submission through Apple's review process. Android release in progress."
     },
     {
       "name": "Project Sukoon (People+AI) - Volunteer",
